@@ -1,0 +1,5 @@
+.spot { float: left; width: 140px; padding: 0; margin: 10px; text-align: center;}
+.spot a { text-decoration: none;}
+.spot a:hover { text-decoration: underline;}
+.spot img { border: 0px;}
+h3.address { padding: 10px; font-size: 200%; font-weight: bold;}

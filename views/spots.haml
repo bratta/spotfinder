@@ -1,0 +1,14 @@
+%div{:class => 'box box100'}
+  .boxin
+    .header
+      %h3 Gowalla Spotfinder - Spots
+      %a{:class => 'button', :href => '/'} back&nbsp;&rsaquo;
+    %h3.address Spots close to #{@address}
+    - @spots.each do |spot|
+      .spot
+        %a{:href => "http://gowalla.com#{spot.url}"}
+          %img{:src => spot.image_url }
+        %br
+        %a{:href => "http://gowalla.com#{spot.url}"}  
+          %span= spot.name
+    %div{:style => 'clear: both'}

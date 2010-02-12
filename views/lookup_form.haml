@@ -1,0 +1,15 @@
+%div{:class => 'box box100'}
+  .boxin
+    .header
+      %h3 Gowalla Spotfinder
+    %form{:id => 'lookup_form', :action => '/', :method => 'post'}
+      %dl
+        %dt
+          %label{:for => 'address'} Address:
+        %dd
+          %input{:class => 'txt', :type => 'text', :style => 'width: 90%', :id => 'address', :name => 'address'}
+          %br
+          %small eg. 1600 Pennsylvania Ave, Washington DC
+        %dt
+        %dd
+          %input{:class => 'button', :type => 'submit', :value => 'Lookup!'}
